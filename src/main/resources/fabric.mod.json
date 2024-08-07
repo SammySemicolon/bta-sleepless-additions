@@ -1,12 +1,12 @@
 {
   "schemaVersion": 1,
-  "id": "examplemod",
+  "id": "sleepless_additions",
   "version": "${version}",
 
-  "name": "Example Mod",
-  "description": "This mod aims to help new BTA modders.",
+  "name": "Sleepless Additions",
+  "description": "It adds cool stuff :3",
   "authors": [
-    "Turnip Labs"
+    "Sammy and Mlekpi"
   ],
   "contact": {
     "homepage": "",
@@ -19,24 +19,24 @@
   "environment": "*",
   "entrypoints": {
     "main": [
-			"turniplabs.examplemod.ExampleMod"
+			"sleepless.sleepless_additions.SleeplessAdditionsMod"
     ],
 		"beforeGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"sleepless.sleepless_additions.SleeplessAdditionsMod"
 		],
 		"afterGameStart": [
-			"turniplabs.examplemod.ExampleMod"
+			"sleepless.sleepless_additions.SleeplessAdditionsMod"
 		],
 		"recipesReady": [
-			"turniplabs.examplemod.ExampleMod"
+			"sleepless.sleepless_additions.SleeplessAdditionsMod"
 		]
 	},
   "mixins": [
-      "examplemod.mixins.json"
+		"sleepless_additions.mixins.json"
   ],
 
   "depends": {
-		"minecraft": "~7.1",
+		"minecraft": "~7.2",
     "fabricloader": ">=0.15.5"
   },
   "suggests": {
