@@ -23,16 +23,20 @@ public class BlockRegistry {
 	public static Block oreRubyLimestone;
 	public static Block oreRubyGranite;
 
+	public static Block blockRuby;
+
 	public void initializeBlockDetails() {
-		ItemToolPickaxe.miningLevels.put(oreRubyStone, 1);
-		ItemToolPickaxe.miningLevels.put(oreRubyBasalt, 1);
-		ItemToolPickaxe.miningLevels.put(oreRubyLimestone, 1);
-		ItemToolPickaxe.miningLevels.put(oreRubyGranite, 1);
+		ItemToolPickaxe.miningLevels.put(oreRubyStone, 2);
+		ItemToolPickaxe.miningLevels.put(oreRubyBasalt, 2);
+		ItemToolPickaxe.miningLevels.put(oreRubyLimestone, 2);
+		ItemToolPickaxe.miningLevels.put(oreRubyGranite, 2);
+		ItemToolPickaxe.miningLevels.put(blockRuby, 2);
 
 		CreativeHelper.setParent(oreRubyStone, Block.oreDiamondGranite);
 		CreativeHelper.setParent(oreRubyBasalt, Block.oreDiamondGranite);
 		CreativeHelper.setParent(oreRubyLimestone, Block.oreDiamondGranite);
 		CreativeHelper.setParent(oreRubyGranite, Block.oreDiamondGranite);
+		CreativeHelper.setParent(blockRuby, Block.blockDiamond);
 
 		Registries.ITEM_GROUPS.register("sleepless_additions:ruby_ore", Registries.stackListOf(oreRubyStone, oreRubyBasalt, oreRubyLimestone, oreRubyGranite));
 
@@ -46,18 +50,27 @@ public class BlockRegistry {
 			.setResistance(5.0f)
 			.setTags(BlockTags.MINEABLE_BY_PICKAXE);
 
-		// Randomite Ores
+		BlockBuilder fullBlock = new BlockBuilder(MOD_ID)
+			.setBlockSound(new BlockSound("step.stone", "step.stone", 1.0f, 1.0f))
+			.setHardness(5.0f)
+			.setResistance(10.0f)
+			.setTags(BlockTags.MINEABLE_BY_PICKAXE);
+
 		oreRubyStone = ore
-			.setBlockModel(block -> new BlockModelStandard<>(block).withTextures("sleepless_additions:block/randomitestone"))
+			.setBlockModel(block -> new BlockModelStandard<>(block).withTextures("sleepless_additions:block/ore_ruby_stone"))
 			.build(new BlockOreRuby("ore.rubyore.stone", blockID("oreRubyStone"), Material.stone));
 		oreRubyBasalt = ore
-			.setBlockModel(block -> new BlockModelStandard<>(block).withTextures("sleepless_additions:block/randomitebasalt"))
+			.setBlockModel(block -> new BlockModelStandard<>(block).withTextures("sleepless_additions:block/ore_ruby_basalt"))
 			.build(new BlockOreRuby("ore.rubyore.basalt", blockID("oreRubyBasalt"), Material.stone));
 		oreRubyLimestone = ore
-			.setBlockModel(block -> new BlockModelStandard<>(block).withTextures("sleepless_additions:block/randomitelimestone"))
+			.setBlockModel(block -> new BlockModelStandard<>(block).withTextures("sleepless_additions:block/ore_ruby_limestone"))
 			.build(new BlockOreRuby("ore.rubyore.limestone", blockID("oreRubyLimestone"), Material.stone));
 		oreRubyGranite = ore
-			.setBlockModel(block -> new BlockModelStandard<>(block).withTextures("sleepless_additions:block/randomitegranite"))
+			.setBlockModel(block -> new BlockModelStandard<>(block).withTextures("sleepless_additions:block/ore_ruby_granite"))
 			.build(new BlockOreRuby("ore.rubyore.granite", blockID("oreRubyGranite"), Material.stone));
+
+		blockRuby = fullBlock
+			.setBlockModel(block -> new BlockModelStandard<>(block).withTextures("sleepless_additions:block/block_ruby"))
+			.build(new Block("block.ruby", blockID("blockRuby"), Material.stone));
 	}
 }

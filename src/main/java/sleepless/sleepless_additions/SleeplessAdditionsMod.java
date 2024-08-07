@@ -27,6 +27,7 @@ public class SleeplessAdditionsMod implements ModInitializer, GameStartEntrypoin
 
 	@Override
 	public void afterGameStart() {
+		itemRegistry.initializeItemDetails();
 		blockRegistry.initializeBlockDetails();
 	}
 
