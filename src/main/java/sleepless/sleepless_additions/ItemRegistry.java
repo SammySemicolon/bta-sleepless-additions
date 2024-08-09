@@ -17,12 +17,12 @@ public class ItemRegistry {
 		return SleeplessConfig.cfg.getInt("Item IDs." + itemName);
 	}
 
-	public static final ToolMaterial RUBY_TOOL = (new ToolMaterial()).setDurability(1024).setEfficiency(12.0F, 24.0F).setMiningLevel(3).setSilkTouch(true);
+	public static final ToolMaterial RUBY_TOOL = (new ToolMaterial()).setDurability(1024).setEfficiency(16.0F, 32.0F).setMiningLevel(2).setSilkTouch(true);
 	public static final ArmorMaterial RUBY_ARMOR = ArmorMaterial.register(
-		new ArmorMaterial(new NamespaceID("minecraft", "gold"), ArmorMaterial.getArmorMaterials().size()-1, 400))
+		new ArmorMaterial(new NamespaceID(SleeplessAdditionsMod.MOD_ID, "rosarian"), ArmorMaterial.getArmorMaterials().size()-1, 400))
 		.withProtectionPercentage(DamageType.COMBAT, 70.0F)
-		.withProtectionPercentage(DamageType.BLAST, 70.0F)
-		.withProtectionPercentage(DamageType.FIRE, 70.0F)
+		.withProtectionPercentage(DamageType.BLAST, 50.0F)
+		.withProtectionPercentage(DamageType.FIRE, 50.0F)
 		.withProtectionPercentage(DamageType.FALL, 70.0F);
 
 	public static Item ruby;
