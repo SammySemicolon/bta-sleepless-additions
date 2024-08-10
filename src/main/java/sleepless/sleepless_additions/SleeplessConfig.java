@@ -16,8 +16,8 @@ public class SleeplessConfig {
 	public static final Toml properties = new Toml("Sleepless TOML Config");
 	public static TomlConfigHandler cfg;
 
-	public static int blockIndex = 1011;
-	public static int itemIndex = 634;
+	public static int blockIndex = 21011;
+	public static int itemIndex = 23634;
 
 
 	static {

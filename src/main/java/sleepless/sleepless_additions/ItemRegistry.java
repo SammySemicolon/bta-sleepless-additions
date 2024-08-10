@@ -8,6 +8,7 @@ import net.minecraft.core.item.material.ToolMaterial;
 import net.minecraft.core.item.tool.*;
 import net.minecraft.core.util.collection.NamespaceID;
 import net.minecraft.core.util.helper.DamageType;
+import sleepless.sleepless_additions.content.ItemSlingshot;
 import turniplabs.halplibe.helper.CreativeHelper;
 import turniplabs.halplibe.helper.ItemBuilder;
 
@@ -37,6 +38,10 @@ public class ItemRegistry {
 	public static Item armorChestplateRuby;
 	public static Item armorLeggingsRuby;
 	public static Item armorBootsRuby;
+
+	public static Item itemWoodenSlingshot;
+	public static Item itemSteelSlingshot;
+
 
 	public void initializeItems() {
 		// Items
@@ -80,6 +85,14 @@ public class ItemRegistry {
 		armorBootsRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
 			.setIcon("sleepless_additions:item/armor_boots_rosarian")
 			.build(new ItemArmor("armor.boots.rosarian", itemID("armorBootsRuby"), RUBY_ARMOR, 3));
+
+		itemWoodenSlingshot = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
+			.setIcon("sleepless_additions:item/wooden_slingshot")
+			.build(new ItemSlingshot("wooden_slingshot", itemID("itemWoodenSlingshot"), 384));
+
+		itemSteelSlingshot = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
+			.setIcon("sleepless_additions:item/steel_slingshot")
+			.build(new ItemSlingshot("steel_slingshot", itemID("itemSteelSlingshot"), 2304));
 	}
 
 	public void initializeItemDetails() {
@@ -95,6 +108,9 @@ public class ItemRegistry {
 		CreativeHelper.setParent(armorChestplateRuby, Item.armorBootsGold);
 		CreativeHelper.setParent(armorLeggingsRuby, Item.armorBootsGold);
 		CreativeHelper.setParent(armorBootsRuby, Item.armorBootsGold);
+
+		CreativeHelper.setParent(itemWoodenSlingshot, Item.olivine);
+		CreativeHelper.setParent(itemSteelSlingshot, Item.toolHoeSteel);
 
 		Registries.ITEM_GROUPS.register("sleepless_additions:ruby_tools", Registries.stackListOf(toolSwordRuby, toolShovelRuby, toolPickaxeRuby, toolAxeRuby, toolHoeRuby));
 		Registries.ITEM_GROUPS.register("sleepless_additions:ruby_armor", Registries.stackListOf(armorHelmetRuby, armorChestplateRuby, armorLeggingsRuby, armorBootsRuby));

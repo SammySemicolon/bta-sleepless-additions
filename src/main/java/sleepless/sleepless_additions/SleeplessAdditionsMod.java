@@ -1,8 +1,10 @@
 package sleepless.sleepless_additions;
 
 import net.fabricmc.api.ModInitializer;
+import net.minecraft.core.WeightedRandomLootObject;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
+import turniplabs.halplibe.helper.RecipeBuilder;
 import turniplabs.halplibe.util.GameStartEntrypoint;
 import turniplabs.halplibe.util.RecipeEntrypoint;
 
@@ -33,7 +35,8 @@ public class SleeplessAdditionsMod implements ModInitializer, GameStartEntrypoin
 
 	@Override
 	public void onRecipesReady() {
-
+		RecipeBuilder.ModifyTrommel("minecraft", "rich_dirt")
+			.addEntry(new WeightedRandomLootObject(ItemRegistry.ruby.getDefaultStack(), 1), 1);
 	}
 
 	@Override
