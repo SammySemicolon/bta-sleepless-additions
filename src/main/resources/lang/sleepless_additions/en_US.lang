@@ -1,53 +1,53 @@
-"item.sleepless_additions.armor.helmet.ruby.name" = "Ruby Helmet".
-"item.sleepless_additions.armor.helmet.ruby.desc" = "A stylish ruby helmet.".
+item.sleepless_additions.armor.helmet.ruby.name = Ruby Helmet
+item.sleepless_additions.armor.helmet.ruby.desc = A stylish ruby helmet.
 
-"item.sleepless_additions.armor.chestplate.ruby.name" = "Ruby Chestplate".
-"item.sleepless_additions.armor.chestplate.ruby.desc" = "A stylish ruby chestplate.".
+item.sleepless_additions.armor.chestplate.ruby.name = Ruby Chestplate
+item.sleepless_additions.armor.chestplate.ruby.desc = A stylish ruby chestplate.
 
-"item.sleepless_additions.armor.leggings.ruby.name" = "Ruby Leggings".
-"item.sleepless_additions.armor.leggings.ruby.desc" = "A pair of stylish ruby leggings.".
+item.sleepless_additions.armor.leggings.ruby.name = Ruby Leggings
+item.sleepless_additions.armor.leggings.ruby.desc = A pair of stylish ruby leggings.
 
-"item.sleepless_additions.armor.boots.ruby.name" = "Ruby Boots".
-"item.sleepless_additions.armor.boots.ruby.desc" = "A pair of stylish ruby boots.".
+item.sleepless_additions.armor.boots.ruby.name = Ruby Boots
+item.sleepless_additions.armor.boots.ruby.desc = A pair of stylish ruby boots.
 
-"item.sleepless_additions.tool.pickaxe.ruby.name" = "Ruby Pickaxe".
-"item.sleepless_additions.tool.pickaxe.ruby.desc" = "Pick some stone with this ruby tool.".
+item.sleepless_additions.tool.pickaxe.ruby.name = Ruby Pickaxe
+item.sleepless_additions.tool.pickaxe.ruby.desc = Pick some stone with this ruby tool.
 
-"item.sleepless_additions.tool.axe.ruby.name" = "Ruby Axe".
-"item.sleepless_additions.tool.axe.ruby.desc" = "Chop some trees with this ruby tool.".
+item.sleepless_additions.tool.axe.ruby.name = Ruby Axe
+item.sleepless_additions.tool.axe.ruby.desc = Chop some trees with this ruby tool.
 
-"item.sleepless_additions.tool.sword.ruby.name" = "Ruby Sword".
-"item.sleepless_additions.tool.sword.ruby.desc" = "Slay pesky monsters with this stylish ruby blade.".
+item.sleepless_additions.tool.sword.ruby.name = Ruby Sword
+item.sleepless_additions.tool.sword.ruby.desc = Slay pesky monsters with this stylish ruby blade.
 
-"item.sleepless_additions.tool.shovel.ruby.name" = "Ruby Shovel".
-"item.sleepless_additions.tool.shovel.ruby.desc" = "Dig up the dirt with this ruby tool.".
+item.sleepless_additions.tool.shovel.ruby.name = Ruby Shovel
+item.sleepless_additions.tool.shovel.ruby.desc = Dig up the dirt with this ruby tool.
 
-"item.sleepless_additions.tool.hoe.ruby.name" = "Ruby Hoe".
-"item.sleepless_additions.tool.hoe.ruby.desc" = "Till the land with this ruby tool.".
+item.sleepless_additions.tool.hoe.ruby.name = Ruby Hoe
+item.sleepless_additions.tool.hoe.ruby.desc = Till the land with this ruby tool.
 
-"item.sleepless_additions.wooden_slingshot.name" = "Wooden Slingshot".
-"item.sleepless_additions.wooden_slingshot.desc" = "Pester your friends with this handy wooden rock launcher!".
+item.sleepless_additions.wooden_slingshot.name = Wooden Slingshot
+item.sleepless_additions.wooden_slingshot.desc = Pester your friends with this handy wooden rock launcher!.
 
-"item.sleepless_additions.steel_slingshot.name" = "Steel Slingshot".
-"item.sleepless_additions.steel_slingshot.desc" = "Pester your friends even more with this durable steel rock launcher!".
+item.sleepless_additions.steel_slingshot.name = Steel Slingshot
+item.sleepless_additions.steel_slingshot.desc = Pester your friends even more with this durable steel rock launcher!.
 
-"item.sleepless_additions.ore.rubyore.stone.name" = "Stone Ruby Ore".
-"item.sleepless_additions.ore.rubyore.stone.desc" = "Ruby chunks embedded in stone.".
+tile.sleepless_additions.ore.rubyore.stone.name = Stone Ruby Ore
+tile.sleepless_additions.ore.rubyore.stone.desc = Ruby chunks embedded in stone.
 
-"item.sleepless_additions.ore.rubyore.basalt.name" = "Basalt Ruby Ore".
-"item.sleepless_additions.ore.rubyore.basalt.desc" = "Ruby chunks embedded in basalt.".
+tile.sleepless_additions.ore.rubyore.basalt.name = Basalt Ruby Ore
+tile.sleepless_additions.ore.rubyore.basalt.desc = Ruby chunks embedded in basalt.
 
-"item.sleepless_additions.ore.rubyore.limestone.name" = "Limestone Ruby Ore".
-"item.sleepless_additions.ore.rubyore.limestone.desc" = "Ruby chunks embedded in limestone.".
+tile.sleepless_additions.ore.rubyore.limestone.name = Limestone Ruby Ore
+tile.sleepless_additions.ore.rubyore.limestone.desc = Ruby chunks embedded in limestone.
 
-"item.sleepless_additions.ore.rubyore.granite.name" = "Granite Ruby Ore".
-"item.sleepless_additions.ore.rubyore.granite.desc" = "Ruby chunks embedded in granite.".
+tile.sleepless_additions.ore.rubyore.granite.name = Granite Ruby Ore
+tile.sleepless_additions.ore.rubyore.granite.desc = Ruby chunks embedded in granite.
 
-"item.sleepless_additions.block.ruby.name" = "Block of Ruby".
-"item.sleepless_additions.block.ruby.desc" = "A solid block of Ruby. Not green this time.".
+tile.sleepless_additions.block.ruby.name = Block of Ruby
+tile.sleepless_additions.block.ruby.desc = A solid block of Ruby. Not green this time.
 
-"item.sleepless_additions.ruby.name" = "Ruby".
-"item.sleepless_additions.ruby.desc" = "A strong gemstone used to make tools. Stylish!".
+tile.sleepless_additions.bricks.ruby.name = Ruby Bricks
+tile.sleepless_additions.bricks.ruby.desc = Stacked bricks of ruby.
 
-"item.sleepless_additions.block.rubybricks.name" = "Ruby Bricks"
-"item.sleepless_additions.block.rubybricks.desc" = "Stacked bricks of ruby."
+item.sleepless_additions.ruby.name = Ruby
+item.sleepless_additions.ruby.desc = A strong gemstone used to make tools. Stylish!.

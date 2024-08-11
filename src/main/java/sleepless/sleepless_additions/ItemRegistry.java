@@ -20,7 +20,7 @@ public class ItemRegistry {
 
 	public static final ToolMaterial RUBY_TOOL = (new ToolMaterial()).setDurability(1024).setEfficiency(16.0F, 32.0F).setMiningLevel(2).setSilkTouch(true);
 	public static final ArmorMaterial RUBY_ARMOR = ArmorMaterial.register(
-		new ArmorMaterial(new NamespaceID(SleeplessAdditionsMod.MOD_ID, "rosarian"), ArmorMaterial.getArmorMaterials().size()-1, 400))
+		new ArmorMaterial(new NamespaceID(SleeplessAdditionsMod.MOD_ID, "ruby"), ArmorMaterial.getArmorMaterials().size()-1, 400))
 		.withProtectionPercentage(DamageType.COMBAT, 70.0F)
 		.withProtectionPercentage(DamageType.BLAST, 50.0F)
 		.withProtectionPercentage(DamageType.FIRE, 50.0F)
@@ -48,40 +48,40 @@ public class ItemRegistry {
 			.build(new Item("ruby", itemID("ruby")));
 
 		toolRubySword = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
-			.setIcon("sleepless_additions:item/tool_sword_rosarian")
-			.build(new ItemToolSword("tool.sword.rosarian", itemID("toolRubySword"), RUBY_TOOL));
+			.setIcon("sleepless_additions:item/tool_sword_ruby")
+			.build(new ItemToolSword("tool.sword.ruby", itemID("toolRubySword"), RUBY_TOOL));
 
 		toolRubyShovel = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
-			.setIcon("sleepless_additions:item/tool_shovel_rosarian")
-			.build(new ItemToolShovel("tool.shovel.rosarian", itemID("toolRubyShovel"), RUBY_TOOL));
+			.setIcon("sleepless_additions:item/tool_shovel_ruby")
+			.build(new ItemToolShovel("tool.shovel.ruby", itemID("toolRubyShovel"), RUBY_TOOL));
 
 		toolRubyPickaxe = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
-			.setIcon("sleepless_additions:item/tool_pickaxe_rosarian")
-			.build(new ItemToolPickaxe("tool.pickaxe.rosarian", itemID("toolRubyPickaxe"), RUBY_TOOL));
+			.setIcon("sleepless_additions:item/tool_pickaxe_ruby")
+			.build(new ItemToolPickaxe("tool.pickaxe.ruby", itemID("toolRubyPickaxe"), RUBY_TOOL));
 
 		toolRubyAxe = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
-			.setIcon("sleepless_additions:item/tool_axe_rosarian")
-			.build(new ItemToolAxe("tool.axe.rosarian", itemID("toolRubyAxe"), RUBY_TOOL));
+			.setIcon("sleepless_additions:item/tool_axe_ruby")
+			.build(new ItemToolAxe("tool.axe.ruby", itemID("toolRubyAxe"), RUBY_TOOL));
 
 		toolRubyHoe = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
-			.setIcon("sleepless_additions:item/tool_hoe_rosarian")
-			.build(new ItemToolHoe("tool.hoe.rosarian", itemID("toolRubyHoe"), RUBY_TOOL));
+			.setIcon("sleepless_additions:item/tool_hoe_ruby")
+			.build(new ItemToolHoe("tool.hoe.ruby", itemID("toolRubyHoe"), RUBY_TOOL));
 
 		armorHelmetRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
-			.setIcon("sleepless_additions:item/armor_helmet_rosarian")
-			.build(new ItemArmor("armor.helmet.rosarian", itemID("armorHelmetRuby"), RUBY_ARMOR, 0));
+			.setIcon("sleepless_additions:item/armor_helmet_ruby")
+			.build(new ItemArmor("armor.helmet.ruby", itemID("armorHelmetRuby"), RUBY_ARMOR, 0));
 
 		armorChestplateRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
-			.setIcon("sleepless_additions:item/armor_chestplate_rosarian")
-			.build(new ItemArmor("armor.chestplate.rosarian", itemID("armorChestplateRuby"), RUBY_ARMOR, 1));
+			.setIcon("sleepless_additions:item/armor_chestplate_ruby")
+			.build(new ItemArmor("armor.chestplate.ruby", itemID("armorChestplateRuby"), RUBY_ARMOR, 1));
 
 		armorLeggingsRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
-			.setIcon("sleepless_additions:item/armor_leggings_rosarian")
-			.build(new ItemArmor("armor.leggings.rosarian", itemID("armorLeggingsRuby"), RUBY_ARMOR, 2));
+			.setIcon("sleepless_additions:item/armor_leggings_ruby")
+			.build(new ItemArmor("armor.leggings.ruby", itemID("armorLeggingsRuby"), RUBY_ARMOR, 2));
 
 		armorBootsRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
-			.setIcon("sleepless_additions:item/armor_boots_rosarian")
-			.build(new ItemArmor("armor.boots.rosarian", itemID("armorBootsRuby"), RUBY_ARMOR, 3));
+			.setIcon("sleepless_additions:item/armor_boots_ruby")
+			.build(new ItemArmor("armor.boots.ruby", itemID("armorBootsRuby"), RUBY_ARMOR, 3));
 
 		itemWoodenSlingshot = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
 			.setIcon("sleepless_additions:item/wooden_slingshot")
