@@ -29,6 +29,9 @@
 		],
 		"recipesReady": [
 			"sleepless.sleepless_additions.SleeplessAdditionsMod"
+		],
+		"terrain-api": [
+			"sleepless.sleepless_additions.TerrainAPIContainer"
 		]
 	},
   "mixins": [

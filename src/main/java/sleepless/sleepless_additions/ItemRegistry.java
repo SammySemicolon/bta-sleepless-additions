@@ -98,6 +98,7 @@ public class ItemRegistry {
 	public void initializeItemDetails() {
 		CreativeHelper.setParent(ruby, Item.diamond);
 
+		//        ChunkDecoratorOverworldAPI.oreFeatures.addFeature(new WorldFeatureOre(Block.oreIronStone.id, 8, true), 5, 30/256f);
 		CreativeHelper.setParent(toolSwordRuby, Item.toolAxeGold);
 		CreativeHelper.setParent(toolShovelRuby, toolSwordRuby);
 		CreativeHelper.setParent(toolPickaxeRuby, toolShovelRuby);
