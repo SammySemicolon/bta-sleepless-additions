@@ -22,8 +22,8 @@ public class ItemRegistry {
 	public static final ArmorMaterial RUBY_ARMOR = ArmorMaterial.register(
 		new ArmorMaterial(new NamespaceID(SleeplessAdditionsMod.MOD_ID, "ruby"), ArmorMaterial.getArmorMaterials().size()-1, 400))
 		.withProtectionPercentage(DamageType.COMBAT, 70.0F)
-		.withProtectionPercentage(DamageType.BLAST, 50.0F)
-		.withProtectionPercentage(DamageType.FIRE, 50.0F)
+		.withProtectionPercentage(DamageType.BLAST, 70.0F)
+		.withProtectionPercentage(DamageType.FIRE, 70.0F)
 		.withProtectionPercentage(DamageType.FALL, 70.0F);
 
 	public static Item ruby;
