@@ -61,8 +61,8 @@ public class SleeplessAdditionsMod implements ModInitializer, GameStartEntrypoin
 			.addInput('Y', Item.stick)
 			.create("ruby_sword", ItemRegistry.toolRubySword.getDefaultStack());
 		RecipeBuilder.Shaped(MOD_ID)
-			.setShape("X", "X", "Y")
-			.addInput('Y', ItemRegistry.ruby)
+			.setShape("X", "Y", "Y")
+			.addInput('X', ItemRegistry.ruby)
 			.addInput('Y', Item.stick)
 			.create("ruby_shovel", ItemRegistry.toolRubyShovel.getDefaultStack());
 		RecipeBuilder.Shaped(MOD_ID)
