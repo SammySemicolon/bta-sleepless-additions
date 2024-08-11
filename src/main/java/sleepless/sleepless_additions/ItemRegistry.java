@@ -28,11 +28,11 @@ public class ItemRegistry {
 
 	public static Item ruby;
 
-	public static Item toolSwordRuby;
-	public static Item toolShovelRuby;
-	public static Item toolPickaxeRuby;
-	public static Item toolAxeRuby;
-	public static Item toolHoeRuby;
+	public static Item toolRubySword;
+	public static Item toolRubyShovel;
+	public static Item toolRubyPickaxe;
+	public static Item toolRubyAxe;
+	public static Item toolRubyHoe;
 
 	public static Item armorHelmetRuby;
 	public static Item armorChestplateRuby;
@@ -42,33 +42,30 @@ public class ItemRegistry {
 	public static Item itemWoodenSlingshot;
 	public static Item itemSteelSlingshot;
 
-
 	public void initializeItems() {
-		// Items
-
 		ruby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
 			.setIcon("sleepless_additions:item/ruby")
 			.build(new Item("ruby", itemID("ruby")));
 
-		toolSwordRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
+		toolRubySword = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
 			.setIcon("sleepless_additions:item/tool_sword_rosarian")
-			.build(new ItemToolSword("tool.sword.rosarian", itemID("toolSwordRuby"), RUBY_TOOL));
+			.build(new ItemToolSword("tool.sword.rosarian", itemID("toolRubySword"), RUBY_TOOL));
 
-		toolShovelRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
+		toolRubyShovel = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
 			.setIcon("sleepless_additions:item/tool_shovel_rosarian")
-			.build(new ItemToolShovel("tool.shovel.rosarian", itemID("toolShovelRuby"), RUBY_TOOL));
+			.build(new ItemToolShovel("tool.shovel.rosarian", itemID("toolRubyShovel"), RUBY_TOOL));
 
-		toolPickaxeRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
+		toolRubyPickaxe = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
 			.setIcon("sleepless_additions:item/tool_pickaxe_rosarian")
-			.build(new ItemToolPickaxe("tool.pickaxe.rosarian", itemID("toolPickaxeRuby"), RUBY_TOOL));
+			.build(new ItemToolPickaxe("tool.pickaxe.rosarian", itemID("toolRubyPickaxe"), RUBY_TOOL));
 
-		toolAxeRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
+		toolRubyAxe = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
 			.setIcon("sleepless_additions:item/tool_axe_rosarian")
-			.build(new ItemToolAxe("tool.axe.rosarian", itemID("toolAxeRuby"), RUBY_TOOL));
+			.build(new ItemToolAxe("tool.axe.rosarian", itemID("toolRubyAxe"), RUBY_TOOL));
 
-		toolHoeRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
+		toolRubyHoe = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
 			.setIcon("sleepless_additions:item/tool_hoe_rosarian")
-			.build(new ItemToolHoe("tool.hoe.rosarian", itemID("toolHoeRuby"), RUBY_TOOL));
+			.build(new ItemToolHoe("tool.hoe.rosarian", itemID("toolRubyHoe"), RUBY_TOOL));
 
 		armorHelmetRuby = new ItemBuilder(SleeplessAdditionsMod.MOD_ID)
 			.setIcon("sleepless_additions:item/armor_helmet_rosarian")
@@ -98,12 +95,11 @@ public class ItemRegistry {
 	public void initializeItemDetails() {
 		CreativeHelper.setParent(ruby, Item.diamond);
 
-		//        ChunkDecoratorOverworldAPI.oreFeatures.addFeature(new WorldFeatureOre(Block.oreIronStone.id, 8, true), 5, 30/256f);
-		CreativeHelper.setParent(toolSwordRuby, Item.toolAxeGold);
-		CreativeHelper.setParent(toolShovelRuby, toolSwordRuby);
-		CreativeHelper.setParent(toolPickaxeRuby, toolShovelRuby);
-		CreativeHelper.setParent(toolAxeRuby, toolPickaxeRuby);
-		CreativeHelper.setParent(toolHoeRuby, Item.toolHoeGold);
+		CreativeHelper.setParent(toolRubySword, Item.toolAxeGold);
+		CreativeHelper.setParent(toolRubyShovel, Item.toolAxeGold);
+		CreativeHelper.setParent(toolRubyPickaxe, Item.toolAxeGold);
+		CreativeHelper.setParent(toolRubyAxe, Item.toolAxeGold);
+		CreativeHelper.setParent(toolRubyHoe, Item.toolHoeGold);
 
 		CreativeHelper.setParent(armorHelmetRuby, Item.armorBootsGold);
 		CreativeHelper.setParent(armorChestplateRuby, Item.armorBootsGold);
@@ -113,8 +109,7 @@ public class ItemRegistry {
 		CreativeHelper.setParent(itemWoodenSlingshot, Item.olivine);
 		CreativeHelper.setParent(itemSteelSlingshot, Item.toolHoeSteel);
 
-		Registries.ITEM_GROUPS.register("sleepless_additions:ruby_tools", Registries.stackListOf(toolSwordRuby, toolShovelRuby, toolPickaxeRuby, toolAxeRuby, toolHoeRuby));
+		Registries.ITEM_GROUPS.register("sleepless_additions:ruby_tools", Registries.stackListOf(toolRubySword, toolRubyShovel, toolRubyPickaxe, toolRubyAxe, toolRubyHoe));
 		Registries.ITEM_GROUPS.register("sleepless_additions:ruby_armor", Registries.stackListOf(armorHelmetRuby, armorChestplateRuby, armorLeggingsRuby, armorBootsRuby));
-
 	}
 }

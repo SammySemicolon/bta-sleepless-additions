@@ -36,7 +36,7 @@ public class SleeplessAdditionsMod implements ModInitializer, GameStartEntrypoin
 	@Override
 	public void onRecipesReady() {
 		RecipeBuilder.ModifyTrommel("minecraft", "rich_dirt")
-			.addEntry(new WeightedRandomLootObject(ItemRegistry.ruby.getDefaultStack(), 1), 1);
+			.addEntry(new WeightedRandomLootObject(ItemRegistry.ruby.getDefaultStack(), 1, 2), 3);
 	}
 
 	@Override
