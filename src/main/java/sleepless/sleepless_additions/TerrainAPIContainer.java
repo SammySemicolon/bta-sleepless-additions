@@ -17,6 +17,6 @@ public class TerrainAPIContainer implements TerrainAPI {
 	@Override
 	public void onInitialize() {
 		ChunkDecoratorOverworldAPI.oreFeatures.addFeature(
-			new WorldFeatureOre(BlockRegistry.oreRubyStone.id, 2, true), 3, 0.25f);
+			new WorldFeatureOre(BlockRegistry.oreRubyStone.id, 5, true), 8, 0.3f);
 	}
 }
