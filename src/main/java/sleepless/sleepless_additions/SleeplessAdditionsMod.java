@@ -61,8 +61,8 @@ public class SleeplessAdditionsMod implements ModInitializer, GameStartEntrypoin
 			.addInput('Y', Item.stick)
 			.create("ruby_sword", ItemRegistry.toolRubySword.getDefaultStack());
 		RecipeBuilder.Shaped(MOD_ID)
-			.setShape("X", "X", "Y")
-			.addInput('Y', ItemRegistry.ruby)
+			.setShape("X", "Y", "Y")
+			.addInput('X', ItemRegistry.ruby)
 			.addInput('Y', Item.stick)
 			.create("ruby_shovel", ItemRegistry.toolRubyShovel.getDefaultStack());
 		RecipeBuilder.Shaped(MOD_ID)
@@ -101,10 +101,16 @@ public class SleeplessAdditionsMod implements ModInitializer, GameStartEntrypoin
 			.addInput('X', ItemRegistry.ruby)
 			.addInput('Y', Item.ingotGold)
 			.create("ruby_boots", ItemRegistry.armorBootsRuby.getDefaultStack());
+
+		RecipeBuilder.Shaped(MOD_ID)
+			.setShape(" Y ", "YXY", " Y ")
+			.addInput('X', ItemRegistry.itemWoodenSlingshot)
+			.addInput('Y', Item.ingotSteel)
+			.create("steel_slingshot", ItemRegistry.itemSteelSlingshot.getDefaultStack());
 	}
 
 	@Override
 	public void initNamespaces() {
-
+		RecipeBuilder.initNameSpace(MOD_ID);
 	}
 }

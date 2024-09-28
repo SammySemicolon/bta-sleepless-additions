@@ -109,7 +109,5 @@ public class ItemRegistry {
 		CreativeHelper.setParent(itemWoodenSlingshot, Item.olivine);
 		CreativeHelper.setParent(itemSteelSlingshot, Item.toolHoeSteel);
 
-		Registries.ITEM_GROUPS.register("sleepless_additions:ruby_tools", Registries.stackListOf(toolRubySword, toolRubyShovel, toolRubyPickaxe, toolRubyAxe, toolRubyHoe));
-		Registries.ITEM_GROUPS.register("sleepless_additions:ruby_armor", Registries.stackListOf(armorHelmetRuby, armorChestplateRuby, armorLeggingsRuby, armorBootsRuby));
 	}
 }
